@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('demo', function() {
+    this.route('ef-nav');
+  });
 });
 
 export default Router;

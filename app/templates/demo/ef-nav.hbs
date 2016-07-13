@@ -1,0 +1,363 @@
+<h3>
+  <code>ef-nav</code> component demo
+</h3>
+
+<hr>
+
+<p>Can set <code>inline</code>, <code>inverse</code>, or <code>pills</code> on <code>#ef-nav</code></p>
+
+<p>Should set <code>label</code> and <code>onClick</code> on <code>"nav.link"</code></p>
+
+<p>Can set <code>active</code>, or <code>disabled</code> on <code>"nav.link"</code></p>
+
+<hr>
+
+<p>This code:</p>
+
+<pre>
+&#123;&#123;#ef-nav as |nav|&#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 1"
+    onClick=(action "goToLink1")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  &#125;&#125;
+&#123;&#123;/ef-nav&#125;&#125;
+</pre>
+
+<p>creates:</p>
+
+{{#ef-nav as |nav|}}
+  {{nav.link
+    label="Item 1"
+    onClick=(action "goToLink1")
+  }}
+  {{nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  }}
+  {{nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  }}
+{{/ef-nav}}
+
+
+<hr>
+<hr>
+
+
+<p>This code:</p>
+
+<pre>
+&#123;&#123;#ef-nav
+  inverse=true
+as |nav|&#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 1"
+    onClick=(action "goToLink1")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  &#125;&#125;
+&#123;&#123;/ef-nav&#125;&#125;
+</pre>
+
+
+<p>creates:</p>
+
+{{#ef-nav
+  inverse=true
+as |nav|}}
+  {{nav.link
+    label="Item 1"
+    onClick=(action "goToLink1")
+  }}
+  {{nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  }}
+  {{nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  }}
+{{/ef-nav}}
+
+
+<hr>
+<hr>
+
+
+<p>This code:</p>
+
+<pre>
+&#123;&#123;#ef-nav
+  inline=true
+as |nav|&#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 1"
+    onClick=(action "goToLink1")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  &#125;&#125;
+&#123;&#123;/ef-nav&#125;&#125;
+</pre>
+
+
+<p>creates:</p>
+
+{{#ef-nav
+  inline=true
+as |nav|}}
+  {{nav.link
+    label="Item 1"
+    onClick=(action "goToLink1")
+  }}
+  {{nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  }}
+  {{nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  }}
+{{/ef-nav}}
+
+
+<hr>
+<hr>
+
+
+<p>This code:</p>
+
+<pre>
+&#123;&#123;#ef-nav
+  pills=true
+as |nav|&#125;&#125;
+  &#123;&#123;nav.link
+    active=true
+    label="Item 1"
+    onClick=(action "goToLink1")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  &#125;&#125;
+&#123;&#123;/ef-nav&#125;&#125;
+</pre>
+
+
+<p>creates:</p>
+
+{{#ef-nav
+  pills=true
+as |nav|}}
+  {{nav.link
+    active=true
+    label="Item 1"
+    onClick=(action "goToLink1")
+  }}
+  {{nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  }}
+  {{nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  }}
+{{/ef-nav}}
+
+
+<hr>
+<hr>
+
+
+<p>This code:</p>
+
+<pre>
+&#123;&#123;#ef-nav
+  inline=true
+  pills=true
+as |nav|&#125;&#125;
+  &#123;&#123;nav.link
+    active=true
+    label="Item 1"
+    onClick=(action "goToLink1")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  &#125;&#125;
+&#123;&#123;/ef-nav&#125;&#125;
+</pre>
+
+
+<p>creates:</p>
+
+{{#ef-nav
+  inline=true
+  pills=true
+as |nav|}}
+  {{nav.link
+    active=true
+    label="Item 1"
+    onClick=(action "goToLink1")
+  }}
+  {{nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  }}
+  {{nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  }}
+{{/ef-nav}}
+
+
+
+<hr>
+<hr>
+
+
+<p>This code:</p>
+
+<pre>
+&#123;&#123;#ef-nav
+  inline=true
+  pills=true
+as |nav|&#125;&#125;
+  &#123;&#123;nav.link
+    active=true
+    label="Item 1"
+    onClick=(action "goToLink1")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    disabled=true
+    label="Item 2"
+    onClick=(action "goToLink2")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  &#125;&#125;
+&#123;&#123;/ef-nav&#125;&#125;
+</pre>
+
+
+<p>creates:</p>
+
+{{#ef-nav
+  inline=true
+  pills=true
+as |nav|}}
+  {{nav.link
+    active=true
+    label="Item 1"
+    onClick=(action "goToLink1")
+  }}
+  {{nav.link
+    disabled=true
+    label="Item 2"
+    onClick=(action "goToLink2")
+  }}
+  {{nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  }}
+{{/ef-nav}}
+
+
+
+
+<hr>
+<hr>
+
+
+<p>This code:</p>
+
+<pre>
+&#123;&#123;#ef-nav as |nav|&#125;&#125;
+  &#123;&#123;nav.link
+    active=true
+    label="Item 1"
+    onClick=(action "goToLink1")
+  &#125;&#125;
+  &#123;&#123;#nav.link
+     active=true
+     onClick=(action "goToLink1")
+  &#125;&#125;
+    Item 1.a
+    &lt;div&gt;
+      &lt;small&gt;additional info&lt;/small&gt;
+    &lt;/div&gt;
+  &#123;&#123;/nav.link&#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  &#125;&#125;
+  &#123;&#123;nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  &#125;&#125;
+&#123;&#123;/ef-nav&#125;&#125;
+</pre>
+
+
+<p>creates:</p>
+
+{{#ef-nav as |nav|}}
+  {{nav.link
+    active=true
+    label="Item 1"
+    onClick=(action "goToLink1")
+  }}
+  {{#nav.link
+     active=true
+     onClick=(action "goToLink1")
+  }}
+    Item 1.a
+    <div>
+      <small>additional info</small>
+    </div>
+  {{/nav.link}}
+  {{nav.link
+    label="Item 2"
+    onClick=(action "goToLink2")
+  }}
+  {{nav.link
+    label="Item 3"
+    onClick=(action "goToLink3")
+  }}
+{{/ef-nav}}
+
+
+
+
+
+
+
